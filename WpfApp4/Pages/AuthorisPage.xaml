@@ -14,33 +14,18 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-
-            <StackPanel Grid.Row="0" Grid.RowSpan="2"
-                    Grid.Column="0" Grid.ColumnSpan="4" 
-                    Background="#34C6CD" Margin="0, 0, 0, 40"/>
-            <TextBlock Text="КомиксВьювер" 
-                   Grid.Row="0" 
-                   Grid.Column="0" Grid.ColumnSpan="4" 
-                   HorizontalAlignment="Center" VerticalAlignment="Center" 
-                   FontSize="50" FontWeight="Bold"/>
-            <TextBlock Text="Рады вас видеть!"
-                   Grid.Row="1"
-                   Grid.Column="0" Grid.ColumnSpan="4"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontSize="30" FontWeight="Bold"
-                   Grid.RowSpan="2"/>
-            <TextBox x:Name="TbLogin"
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="TbLogin"
                  Grid.Row="3"
                  Grid.Column="1" Grid.ColumnSpan="2"
                  VerticalAlignment="Bottom"
@@ -73,7 +58,7 @@
                 VerticalAlignment="Top"
                 FontSize="15" FontWeight="Bold"
                 Click="BtnAuthoriz_Click" Grid.RowSpan="2"/>
-            <TextBlock x:Name="TbRegist"
+        <TextBlock x:Name="TbRegist"
                    Text="Нет аккаунта? Самое время его завести!"
                    Grid.Row="6"
                    Grid.Column="0" Grid.ColumnSpan="4"
@@ -81,20 +66,9 @@
                    HorizontalAlignment="Center"
                    FontSize="14"
                    Foreground="Black"
-                   MouseDown="TextBlockMouseDown"
-                   MouseEnter="TextBlockMouseEnter"
-                   MouseLeave="TextBlockMouseLeave" 
+                   MouseDown="TbRegist_MouseDown"
+                   MouseEnter="TbRegist_MouseEnter"
+                   MouseLeave="TbRegist_MouseLeave" 
                     Width="285"/>
-            <CheckBox x:Name="CbSaveLogin"
-                  Content="Запомнить аккаунт?"
-                  IsChecked="True"
-                  Grid.Row="7"
-                  Grid.Column="1" Grid.ColumnSpan="2"
-                  VerticalAlignment="Top"
-                  HorizontalAlignment="Center"
-                  FontSize="14"
-                  Foreground="Black" 
-                  Width="175"/>
-
-        </Grid>
+    </Grid>
 </Page>

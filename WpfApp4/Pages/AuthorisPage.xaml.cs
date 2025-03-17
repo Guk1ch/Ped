@@ -30,19 +30,36 @@ namespace WpfApp4.Pages
 
         private void BtnAuthoriz_Click(object sender, RoutedEventArgs e)
         {
-            int login = Convert.ToInt32(TbLogin.Text.Trim());
-            string password = TbPassword.Password.Trim();
-            sotrudnik = Authorisation.AuthorisationSotr(login, password);
-            if(sotrudnik != null)
-            {
-                //NavigationService.Navigate();
-                MessageBox.Show("Ура в меня вошли");
-            }
-            else
-            {
-                MessageBox.Show("Логин или пароль неверный", "error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            //ddghhk
+            NavigationService.Navigate(new CapchaPage());
+            
+            //int login = Convert.ToInt32(TbLogin.Text.Trim());
+            //string password = TbPassword.Password.Trim();
+            //sotrudnik = Authorisation.AuthorisationSotr(login, password);
+            //if(sotrudnik != null)
+            //{
+            //    //NavigationService.Navigate();
+            //    MessageBox.Show("Ура в меня вошли");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Логин или пароль неверный", "error", MessageBoxButton.OK, MessageBoxImage.Error);
+            //}
+            ////ddghhk
+        }
+
+        private void TbRegist_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void TbRegist_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void TbRegist_MouseLeave(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

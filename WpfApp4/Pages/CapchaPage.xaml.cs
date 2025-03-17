@@ -32,7 +32,7 @@ namespace WpfApp4.Pages
             for(int i =0; i<volumeNoise; i++)
             {
                 Rectangle rectangle = new Rectangle();
-                Ellipse ellipse = new Ellipse();
+                //Ellipse ellipse = new Ellipse();
                 rectangle.Fill = new SolidColorBrush(Color.FromArgb((byte)rnd.Next(35, 120), (byte)rnd.Next(256), (byte)rnd.Next(256), (byte)rnd.Next(256)));
                 rectangle.Width = rectangle.Height = rnd.Next(3, 90);
                 //rectangle.Width = rnd.Next(3, 20);
@@ -53,7 +53,7 @@ namespace WpfApp4.Pages
                 textBlock.FontSize = rnd.Next(10, 84);
                 textBlock.RenderTransform = new RotateTransform(rnd.Next(-45, 45));
                 textBlock.Margin = new Thickness(10, 10, 10, 10);
-                textBlock.Foreground = new SolidColorBrush(Color.FromArgb((byte)rnd.Next(200, 256), (byte)rnd.Next(0, 254), (byte)rnd.Next(0, 254), (byte)rnd.Next(0, 254)));
+                //textBlock.Foreground = new SolidColorBrush(Color.FromArgb((byte)rnd.Next(200, 256), (byte)rnd.Next(0, 254), (byte)rnd.Next(0, 254), (byte)rnd.Next(0, 254)));
                 SpCapch.Children.Add(textBlock);
                 capcha += symbol;
             }
@@ -75,7 +75,8 @@ namespace WpfApp4.Pages
         {
             if (capcha == tbCapch.Text.Trim().ToUpper())
             {
-                MessageBox.Show("УРА Я НЕ РОБОТ!!!!");
+                NavigationService.Navigate(new MainPage());
+                    MessageBox.Show("УРА Я НЕ РОБОТ!!!!");
             }
             else 
             {
