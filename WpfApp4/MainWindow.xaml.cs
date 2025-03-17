@@ -19,6 +19,7 @@ namespace WpfApp4
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
+    /// //fghfghfhf
     public partial class MainWindow : Window
     {
         public MainWindow()
