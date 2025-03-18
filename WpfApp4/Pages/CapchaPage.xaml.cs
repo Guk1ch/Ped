@@ -76,6 +76,7 @@ namespace WpfApp4.Pages
             if (capcha == tbCapch.Text.Trim().ToUpper())
             {
                 MessageBox.Show("УРА Я НЕ РОБОТ!!!!");
+                NavigationService.Navigate(new MainPage());
             }
             else 
             {

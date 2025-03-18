@@ -8,6 +8,6 @@ namespace WpfApp4.Data
 {
     public class DB_Class
     {
-        public static DVDEntities connection = new DVDEntities();
+        public static DVDEntities1 connection = new DVDEntities1();
     }
 }
